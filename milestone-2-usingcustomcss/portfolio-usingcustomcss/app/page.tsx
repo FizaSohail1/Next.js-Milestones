@@ -50,7 +50,7 @@ export default function Home() {
                 <p className={styles.description}>I am a web developer with a background in computer science, specializing in responsive websites using HTML, CSS, JavaScript, TypeScript, and Tailwind CSS. Currently focused on mastering React.js and Next.js to bring creative ideas to life.</p>
                 <Link href="/contact"> <button className={styles.hireButton}>Hire Me</button> </Link> </div>
               <div className={styles.imageContainer}>
-                <Image src={MyHome} alt="abc" width={100} height={100} objectFit="cover" objectPosition="center" className={styles.image} />
+                <Image src={MyHome} alt="abc" width={100} height={100} objectFit="contain" objectPosition="center" className={styles.image} />
               </div>
             </div>
           </div>

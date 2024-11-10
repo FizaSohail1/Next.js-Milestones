@@ -2,13 +2,20 @@ import React from 'react'
 import { FaLinkedin, FaGithub} from "react-icons/fa";
 import Link from 'next/link';
 import styles from './sidebar.module.css'
+import Image from 'next/image'
+import MyHome from "/public/gpt-img.webp";
 
 
 function Sidebar() {
   return (
     <div className={styles.card}>
     <div className={styles.imageCircle}>
-    <img src={'/gpt-img.webp'} alt="abc" />
+    <Image src={MyHome}
+          alt="abc"
+         height={200}
+         width={200}
+          objectFit="contain"
+         objectPosition="center"/>
     </div>
       <h3 className={styles.nameHeading}>Fiza Sohail</h3>
       <p className={styles.subheading}><strong>Web-Developer</strong></p>
