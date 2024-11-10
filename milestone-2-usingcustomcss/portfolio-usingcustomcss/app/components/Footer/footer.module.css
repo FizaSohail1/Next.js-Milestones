@@ -1,0 +1,43 @@
+.Footer{
+    padding: 1rem;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Footer p{
+    font-size: 18px;
+    line-height: 28px ;
+    color:#111827;
+    font-weight: 700;
+}
+.Links{
+    margin-left:16px;
+    margin-right: 16px;
+    display: flex;
+}
+.Link1{
+    color: #eab308;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+    display: block;
+    font-size: 30px;
+    line-height:36px;
+}
+.Link1:hover{
+     color: #1e40af ;
+}
+.Link2{
+    color: #eab308;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+    display: block;
+    font-size: 30px;
+    line-height:36px;
+}
+.Link2:hover{
+    color: #374151;
+}

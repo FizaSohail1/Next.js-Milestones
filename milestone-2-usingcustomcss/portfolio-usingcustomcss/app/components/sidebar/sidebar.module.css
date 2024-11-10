@@ -1,0 +1,153 @@
+.card{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 10px;
+    margin-top: 8px;
+    width: 100%;
+    height: fit-content;
+    border-radius: 6px;
+}
+.imageCircle{
+    border-radius: 9999px;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid #eab308 ;
+}
+.nameHeading{
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 16px 
+}
+.subheading{
+    color: black;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px 
+}
+.socialLinks{
+    display: flex;
+    margin: 0 16px;
+    justify-content: center;
+}
+.linkdinLink{
+    color: #eab308;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+    display: block;
+    font-size: 30px;
+    line-height:36px;
+}
+.linkdinLink:hover{
+     color: #1e40af ;
+}
+.githubLink{
+    color: #eab308;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+    display: block;
+    font-size: 30px;
+    line-height:36px;
+}
+.githubLink:hover{
+    color: #374151;
+}
+
+.infoList{
+    margin: 24px auto;
+    color: black;
+    list-style: none;
+
+}
+.skillHeading{
+    color: #eab308;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height:28px;
+    margin-top:24px;
+    margin-bottom: 12px;
+}
+.skillsList{
+    color: black;
+    list-style: none;
+}
+.skillsList li{
+   margin-bottom: 24px;
+}
+.skillsList h4{
+    color: black;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.bar{
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity)) /* #d1d5db */;
+    border-radius: 9999px;
+    width: 100%;
+    height: 8px;
+}
+.barFill1{
+    background-color:#eab308 ;
+    height: 8px;
+    border-radius: 9999px;
+    width: 98%;
+}
+.barFill2{
+    background-color:#eab308 ;
+    height: 8px;
+    border-radius: 9999px;
+    width: 88%;
+}
+.barFill3{
+    background-color:#eab308 ;
+    height: 8px;
+    border-radius: 9999px;
+    width: 75%;
+}
+.barFill4{
+    background-color:#eab308 ;
+    height: 8px;
+    border-radius: 9999px;
+    width: 50%;
+}
+.barFill5{
+    background-color:#eab308 ;
+    height: 8px;
+    border-radius: 9999px;
+    width: 90%;
+}
+.ViewMoreBtn{
+    margin-top:48px;
+    margin-bottom: 48px;
+    font-weight: 700;
+    width: 100%;
+    background-color:#eab308;
+    color: white;
+    padding: 8px 16px;
+    border-radius:8px;
+}
+@media(min-width:768px){
+    .card{
+        width: 25% ;
+        padding: 32px;
+        margin-left: 20px;
+    }
+    .imageCircle {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .infoList{
+        margin: 32px auto;
+
+    }
+    .infoList li{
+       margin-bottom: 8px;
+    }
+}

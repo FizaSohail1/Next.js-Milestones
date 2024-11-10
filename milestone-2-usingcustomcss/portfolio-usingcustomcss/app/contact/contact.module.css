@@ -1,0 +1,156 @@
+.succeedContainer{
+  padding: 1.5rem  24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13%;
+  margin-bottom: 13%;
+  border-radius:  8px;
+  align-items: center;
+  background-color: white;
+}
+.succeedContainer h1{
+  color: #111827;
+  font-size:  30px;
+  line-height: 36px;
+  text-align: center;
+}
+.goBackBtn{
+  background-color: #111827;
+  color: white;
+  font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 9999px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms;
+  display: inline-block;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top:  20px;
+}
+.mainHeading{
+  text-align: center;
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 76px;
+  margin-bottom: 20px;
+}
+.mainHeading span{
+  color: #eab308 ;
+}
+.container{
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding:  24px;
+  margin-bottom: 40px;
+}
+.imageContainer{
+  width: 100%;
+  margin-bottom:  40px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  display: flex;
+}
+.displayImage{
+  height: 300px;
+  max-width: 500px;
+  width: 100%;
+}
+.styleImage{
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.secoundSec{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.formContainer{
+  background-color:#111827;
+  padding: 32px;
+  border-radius: 8px;
+  width: 100%;
+  border:  #eab308 1px;
+}
+.formContainer h2{
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.formGroup label{
+  display: block;
+  color:  #f3f4f6;
+  font-size:  14px;
+  line-height: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.formGroup input{
+  background-color: #f3f4f6;
+  width: 100%;
+  border-radius:8px;
+  padding: 8px 16px;
+  border-width: 1px;
+}
+.formGroup textarea{
+  background-color: #f3f4f6;
+  width: 100%;
+  border-radius:8px;
+  padding: 8px 16px;
+  border-width: 1px;
+}
+.formGroup input:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-color:  #eab308;
+}
+.sendBtn{
+  width: 100%;
+  background-color:  #eab308;
+  padding: 8px 16px;
+  border-radius:  8px;
+  color: white;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms;
+  margin-top: 12px;
+}
+@media (min-width: 768px) {
+  .succeedContainer {
+      width: 33.333333%;
+  }
+  .container{
+    flex-direction: row;
+    width: 80%;
+  }
+  .imageContainer{
+    width: 50%;
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+  .displayImage{
+    height: 500px;
+  }
+  .secoundSec{
+    width: 40%;
+    margin-right: 40px;
+  }
+
+}
