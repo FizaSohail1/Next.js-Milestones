@@ -3,7 +3,7 @@
 import { FaBars } from "react-icons/fa";
 import React, { useState } from "react";
 import Link from 'next/link';
-import styles from './Navbar.module.css';
+import styles from './navbar.module.css';
 
 const Navbar = () => {
   const [isClick, setIsClick] = useState(false);
