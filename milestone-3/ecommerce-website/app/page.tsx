@@ -4,15 +4,14 @@ import { TbHeadset } from "react-icons/tb";
 import { AiOutlineSafety } from "react-icons/ai";
 import Link from "next/link";
 import StarRating from "./components/DynamicStars/page";
-import AddToCartButton from "./components/addToCart/button";
+import AddToCartButton from "./components/addToCart/page";
 
 
 
 export default async function Home() {
  
-  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`);
-  const products = await response.json();
-
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`);
+   const products = await response.json()
   const data = products.filter(
     (product: { category: string }) => product.category === "New-arrival"
   );

@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { useCart } from "@/app/context/cartContext";
+import { useCart } from "@/app/context/page";
 import  { FiHeart} from 'react-icons/fi'
 import {
   AlertDialog,

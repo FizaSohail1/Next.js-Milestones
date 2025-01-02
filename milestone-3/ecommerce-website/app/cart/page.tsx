@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useCart } from "../context/cartContext";
+import { useCart } from "../context/page";
 import Image from "next/image";
 
 const CartPage = () => {

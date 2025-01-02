@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar/page";
 import Footer from "./components/Footer/page";
-import { CartProvider } from "./context/cartContext";
+import { CartProvider } from "./context/page";
 
 
 

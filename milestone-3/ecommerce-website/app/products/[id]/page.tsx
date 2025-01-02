@@ -2,46 +2,49 @@ import React from 'react'
 import Image from 'next/image';
 import StarRating from '@/app/components/DynamicStars/page';
 import Link from 'next/link';
-import AddToCartButton from '@/app/components/addToCart/button';
+import AddToCartButton from '@/app/components/addToCart/page';
 import AddToCartForSingleProductPage from '@/app/components/addToCart1/page';
 
 async function SingleProduct({ params }: { params: { id: string } }) {
 
   const relatedProducts = [
     {
-      id: 1,
-      title: "Casual Sports Shoes",
-      price:"$55.00",
-      rating: 5,
-      image: "https://m.media-amazon.com/images/I/81MP8ZAtORL._AC_SX500_.jpg",
+      "id": "1",
+      "title": "Casual Sports Shoes",
+      "price":55.00,
+      "rating": 5,
+      "image": "https://m.media-amazon.com/images/I/81MP8ZAtORL._AC_SX500_.jpg"
     },
     {
-      id: 2,
-      title: "Violet T-Shirt",
-      category: "T-shirts",
-      rating: 4,
-      price: 21.99,
-      image: "https://m.media-amazon.com/images/I/81790N8YviL._AC_SX425_.jpg",
+      "id": "2",
+      "title": "Violet T-Shirt",
+      "category": "T-shirts",
+      "rating": 4,
+      "price": 21.99,
+      "image": "https://m.media-amazon.com/images/I/81790N8YviL._AC_SX425_.jpg"
   },
   {
-    id: 3,
-    title: "Crystal Jewelery Collection",
-    price:"$120.00",
-    rating: 4,
-    image: "https://m.media-amazon.com/images/I/71W9Bk416aL._AC_SY625_.jpg",
+    "id": "3",
+    "title": "Crystal Jewelery Collection",
+    "price":120.00,
+    "rating": 4,
+    "category" : "jewellery",
+    "image": "https://m.media-amazon.com/images/I/71W9Bk416aL._AC_SY625_.jpg"
   },
   {
-    id: 4,
-    title: "Jeans-Jacket",
-    price:"$32.70",
-    image: "/arrival5.jpg",
-    category: "T-shirts",
-    rating: 4,
-  },
+    "id": "4",
+    "title": "Jeans-Jacket",
+    "price":32.70,
+    "image": "/arrival5.jpg",
+    "category": "T-shirts",
+    "rating": 4,
+  }
   ]
 
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`);
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`);
     const products = await response.json();
+
+    console.log(products)
 
     const { id } = await  params;
 

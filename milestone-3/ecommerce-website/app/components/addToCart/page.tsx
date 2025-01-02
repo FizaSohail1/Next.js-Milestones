@@ -1,5 +1,5 @@
 "use client";
-import { useCart } from "@/app/context/cartContext";
+import { useCart } from "@/app/context/page";
 import {
   AlertDialog,
   AlertDialogAction,

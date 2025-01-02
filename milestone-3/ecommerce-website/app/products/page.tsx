@@ -2,10 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import StarRating from "../components/DynamicStars/page";
-import AddToCartButton from "../components/addToCart/button";
+import AddToCartButton from "../components/addToCart/page";
 
 async function ProductPage() {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`);
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`);
   const products = await response.json();
 
   const TshirtsData = products.filter(
